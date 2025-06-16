@@ -1,0 +1,31 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
+    "npm:publish": "lerna publish --include-merged-tags",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.5.0",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.26.0",
+    "eslint-plugin-vue": "^10.1.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.4.2",
+    "lerna": "^8.2.2",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "qiankun": "^2.10.16"
+  }
+}

@@ -1,0 +1,41 @@
+# .prettierignore
+
+# 编译产物和依赖目录 (忽略所有位置的这些目录)
+node_modules/
+dist/
+coverage/ # 通常也建议忽略测试覆盖率报告目录
+
+# 编辑器和操作系统特定文件 (忽略所有位置的这些目录/文件)
+.vscode/
+.DS_Store
+*.log
+
+# Git 相关文件 (通常只有一个在根目录，但按名称忽略以覆盖所有情况)
+.gitignore
+
+# 配置文件 (按名称忽略，这样无论在根目录还是子目录都会被忽略)
+.prettierrc.js
+commitlint.config.ts
+eslint.config.ts
+.browserslistrc
+.editorconfig
+.npmrc
+lerna.json
+pnpm-workspace.yaml
+
+# 锁文件 (忽略所有位置的锁文件，Prettier 不应格式化它们)
+pnpm-lock.yaml
+
+# package.json 文件 (请看下面的注意事项)
+package.json
+
+# === 其他通用忽略 ===
+# 例如，任何构建输出目录
+build/
+temp/
+*.temp
+*.tmp
+
+
+public/
+.husky/

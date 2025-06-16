@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "npmClient": "pnpm",
+  "version": "independent",
+  "packages": [
+    "packages/*",
+    "apps/*"
+  ],
+  "ignoreChanges": [
+    "**/node_modules/**",
+    ".gitignore",
+    "*.log",
+    "*.md"
+  ],
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore: publish",
+      "allowBranch": [
+        "main"
+      ]
+    },
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    },
+    "publish": {}
+  }
+}

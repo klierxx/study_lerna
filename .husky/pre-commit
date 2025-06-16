@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/common.sh"
+
+# 在 CI (持续集成) 环境中，通常会跳过 pre-commit 钩子，因为 CI 有自己的检查流程
+if [ -n "$CI" ]; then
+  echo "CI environment detected, skipping pre-commit hook."
+  exit 0
+fi
+
+echo "Running pre-commit checks..."
+
+# 运行 lint-staged
+pnpm run lint:lint-staged

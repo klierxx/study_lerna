@@ -1,0 +1,67 @@
+{
+  // 列数折行
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+  // 窗口失去焦点自动保存
+  "files.autoSave": "off",
+  //代码缩进风字符
+  "editor.tabSize": 2,
+  // 控制编辑器是否应在键入后自动设置行的格式
+  "editor.formatOnType": false,
+  // 保存时自动格式化
+  "editor.formatOnSave": false,
+  // 编辑粘贴自动格式化
+  "editor.formatOnPaste": false,
+  // 文件默认语言
+  "files.defaultLanguage": "javascript",
+  // 自动去除尾部空格
+  "files.trimTrailingWhitespace": false,
+  // 使用格式化工具prettier,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vue.format.script.initialIndent": true,
+  "vue.format.style.initialIndent": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // vetur格式化时style缩进
+  "vetur.format.styleInitialIndent": true,
+  // vetur格式化时script缩进
+  "vetur.format.scriptInitialIndent": true,
+  // vetur格式化时初始化缩进空格
+  "vetur.format.options.tabSize": 2,
+  // vetur使用prettier格式化html
+  "vetur.format.defaultFormatter.html": "prettier",
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+}
